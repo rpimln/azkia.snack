@@ -38,7 +38,7 @@
     </div>
 
     <div class="hero-image">
-      <img src="images (2).jpeg" alt="Snack Meuhaba" />
+      <img src="koki.jpeg" alt="Snack Meuhaba" />
     </div>
   </div>
 </section>
@@ -113,7 +113,7 @@
       <div class="product-card">
         <img src="download (1).jpeg" alt="Kripik Usus">
         <h3>Kripik Tempe</h3>
-        <p>Cita rasa indonesia yang khas.</p>
+        <p>Cita rasa indonesia yang khas,dengan bahan premium</p>
         <a href="https://wa.me/6289602299201" class="btn-product">Pesan Sekarang</a>
       </div>
 
@@ -255,13 +255,12 @@ const speed = 1;
 function autoScroll() {
   if (running) {
     scrollAmount += speed;
-    if (scrollAmount >= track.scrollWidth / 2) scrollAmount = 0; // reset untuk looping
+    if (scrollAmount >= track.scrollWidth / 2) scrollAmount = 0; 
     track.style.transform = `translateX(-${scrollAmount}px)`;
   }
   requestAnimationFrame(autoScroll);
 }
 
-// Pause saat hover
 track.addEventListener('mouseenter', () => running = false);
 track.addEventListener('mouseleave', () => running = true);
 
@@ -275,6 +274,7 @@ autoScroll();
 
 </body>
 </html>
+
 
 
 
