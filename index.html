@@ -219,29 +219,35 @@
     <p>&copy; 2025 Azkia Snack. All Rights Reserved.</p>
   </div>
 </footer>
+  
+  
+  <script>
+   function toggleMenu() {
+   const menu = document.querySelector('.nav-links');
+   menu.classList.toggle('open');
+  }
+  </script>
 
-
-
-   <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
+  <script>
+   const hamburger = document.getElementById('hamburger');
+   const navLinks = document.getElementById('nav-links');
+   hamburger.addEventListener('click', () => {
+     navLinks.classList.toggle('show');
     });
   </script>
  
 
   <script>
-const track = document.querySelector('.testimonial-track');
+   const track = document.querySelector('.testimonial-track');
 
-track.innerHTML += track.innerHTML;
+   track.innerHTML += track.innerHTML;
 
-let scrollAmount = 0;
-let running = true;
-const speed = 1; 
+   let scrollAmount = 0;
+   let running = true;
+   const speed = 1; 
 
-function autoScroll() {
-  if (running) {
+  function autoScroll() {
+   if (running) {
     scrollAmount += speed;
     if (scrollAmount >= track.scrollWidth / 2) scrollAmount = 0; 
     track.style.transform = `translateX(-${scrollAmount}px)`;
@@ -255,13 +261,14 @@ track.addEventListener('mouseleave', () => running = true);
 autoScroll();
 </script>
 
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 
    
 
 </body>
 </html>
+
 
 
 
